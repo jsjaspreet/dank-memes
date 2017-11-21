@@ -17,8 +17,6 @@
   "author": "",
   "license": "UNLICENSED",
   "dependencies": {
-    "glob": "^7.1.2",
-    "lorem-ipsum": "^1.0.4",
     "pad": "^2.0.3",
     "query-string": "^5.0.1",
     "react": "^16.0.0",

@@ -1,5 +1,4 @@
 import React, { PureComponent } from 'react'
-import loremIpsum from 'lorem-ipsum'
 
 const descriptionStyle = {
   fontFamily: "'Assistant', sans-serif",
@@ -14,7 +13,7 @@ class MemePreview extends PureComponent {
   render() {
     const {
       thumbnailURL = 'http://lorempixel.com/350/300/abstract/',
-      description = loremIpsum({ count: 3, units: 'words' })
+      description = ''
     } = this.props
     return (
       <div style={containerStyle}>

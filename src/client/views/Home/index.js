@@ -16,7 +16,7 @@ class Home extends PureComponent {
             monitorImagesLoaded
           >
             {
-              db.getPage(0).map(meme => <MemePreview {...meme} />)
+              db.getPage(0).map(meme => <MemePreview key={meme.imageId} {...meme} />)
             }
           </StackGrid>
         </div>
