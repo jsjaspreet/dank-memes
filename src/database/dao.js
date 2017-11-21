@@ -16,6 +16,9 @@ const db = {
         ...additionalFields
       }
     })
+  },
+  getTotalPages() {
+    return Math.ceil(database.length / PAGE_SIZE)
   }
 }
 
