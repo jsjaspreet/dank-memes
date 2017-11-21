@@ -3,7 +3,7 @@ import { generateAdditionalFields } from './helpers'
 
 const PAGE_SIZE = 10
 
-export const db = {
+const db = {
   getPage(pageNumber) {
     const startIndex = PAGE_SIZE * pageNumber
     const rawMemes = database.slice(startIndex, startIndex + PAGE_SIZE)
@@ -19,3 +19,4 @@ export const db = {
   }
 }
 
+export default db

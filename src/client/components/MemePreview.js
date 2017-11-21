@@ -13,13 +13,12 @@ const containerStyle = {
 class MemePreview extends PureComponent {
   render() {
     const {
-      previewURL = 'http://lorempixel.com/350/300/abstract/',
-      id = 1,
+      thumbnailURL = 'http://lorempixel.com/350/300/abstract/',
       description = loremIpsum({ count: 3, units: 'words' })
     } = this.props
     return (
       <div style={containerStyle}>
-        <img src={previewURL + id}/>
+        <img src={thumbnailURL}/>
         <span style={descriptionStyle}>
           {description}
           </span>
