@@ -3,7 +3,7 @@ const { extname } = require('path')
 const pad = require('pad')
 
 const SRC = './dank-memes'
-const DIST = './dank-memes-enumerated'
+const DIST = './enumerated'
 
 const srcMemes = readdirSync(SRC)
 
