@@ -8,12 +8,16 @@ module.exports = {
   entry: {
     bundle: [
       'react-hot-loader/patch',
+      'babel-polyfill',
       projectPaths.clientEntry
     ],
     vendor: [
       'react',
       'react-dom',
       'react-loadable',
+      'axios',
+      'react-fontawesome',
+      'react-stack-grid',
       'react-hot-loader',
       'react-router-dom',
     ]

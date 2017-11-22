@@ -1,15 +1,19 @@
 import React, { Component } from 'react'
-import Nav from './nav'
-import App from './app'
+import { Switch, Route, Redirect } from 'react-router-dom'
+import Home from '../Home'
+import NoMatch from './nomatch'
 
-class Root extends Component {
 
+class App extends Component {
   render() {
-    return ([
-      <Nav key="nav"/>,
-      <App key="app"/>
-    ])
+    return (
+      <Switch>
+        <Route path="/" exact render={() => <Redirect to="/memes/0"/>}/>
+        <Route path="/memes/:page" exact component={Home}/>
+        <Route component={NoMatch}/>
+      </Switch>
+    )
   }
 }
 
-export default Root
+export default App
