@@ -12,8 +12,8 @@ module.exports = {
       projectPaths.clientEntry
     ],
     vendor: [
-      'react',
-      'react-dom',
+      'preact',
+      'preact-compat',
       'react-loadable',
       'axios',
       'react-fontawesome',
@@ -40,6 +40,13 @@ module.exports = {
       names: ['vendor', 'manifest']
     }),
   ],
+  resolve: {
+    "alias": {
+      "react": "preact-compat",
+      "react-dom": "preact-compat",
+      "preact-compat": "preact-compat/dist/preact-compat"
+    }
+  },
   module: {
     rules: [
       {
