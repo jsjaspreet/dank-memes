@@ -11,6 +11,7 @@
     "docker:build": "npm run build:client:prod && docker build -t topkekkle:${npm_package_version} .",
     "docker:start": "docker run -dp 8080:80 -t topkekkle:${npm_package_version}",
     "release": "standard-version",
+    "deploy": "./scripts/deploy.sh",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
@@ -37,6 +38,7 @@
     "babel-preset-react": "^6.24.1",
     "babel-preset-stage-1": "^6.24.1",
     "clean-webpack-plugin": "^0.1.17",
+    "compression-webpack-plugin": "^1.0.1",
     "concurrent-transform": "^1.0.0",
     "css-loader": "^0.28.7",
     "file-loader": "^1.1.5",
@@ -50,7 +52,6 @@
     "uglifyjs-webpack-plugin": "^1.0.1",
     "webpack": "^3.8.1",
     "webpack-dev-server": "^2.9.4",
-    "webpack-merge": "^4.1.1",
-    "zopfli-webpack-plugin": "^0.1.0"
+    "webpack-merge": "^4.1.1"
   }
 }

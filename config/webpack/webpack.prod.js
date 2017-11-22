@@ -1,8 +1,10 @@
 const webpack = require('webpack')
 const merge = require('webpack-merge');
 const UglifyJSPlugin = require('uglifyjs-webpack-plugin')
-const ZopfliPlugin = require('zopfli-webpack-plugin')
-const common = require('./webpack.common');
+const CompressionPlugin = require("compression-webpack-plugin")
+const common = require('./webpack.common')
+const projectPaths = require('../projectPaths')
+
 
 module.exports = merge(common, {
   devtool: '',
@@ -17,13 +19,11 @@ module.exports = merge(common, {
         'NODE_ENV': JSON.stringify('production')
       }
     }),
-    new ZopfliPlugin({
-      asset: "[path].gz[query]",
-      algorithm: "zopfli",
-      test: /\.(js|html)$/,
-      threshold: 10240,
+    new CompressionPlugin({
       deleteOriginalAssets: true,
-      minRatio: 0.8
     })
   ]
 })
+
+
+

@@ -41,7 +41,7 @@ class Header extends PureComponent {
             <Link to={`/memes/${currPageNumber - 1}`}>
               <FontAwesome
                 name="arrow-left"
-                size="4x"
+                size="3x"
                 style={leftArrowStyle}
               />
             </Link> : <div style={{ width: 70 }}/>
