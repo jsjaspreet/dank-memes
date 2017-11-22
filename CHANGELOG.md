@@ -2,6 +2,18 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+<a name="1.1.0"></a>
+# [1.1.0](https://github.com/jsjaspreet/react-starter/compare/v1.0.0...v1.1.0) (2017-11-22)
+
+
+### Features
+
+* **deploy-scripts:** Add deploy scripts ([412cbda](https://github.com/jsjaspreet/react-starter/commit/412cbda))
+* **justify-memes:** Align memes ([2fcac35](https://github.com/jsjaspreet/react-starter/commit/2fcac35))
+* **zopfli:** Integrate compression ([64f9a30](https://github.com/jsjaspreet/react-starter/commit/64f9a30))
+
+
+
 <a name="1.0.0"></a>
 # [1.0.0](https://github.com/jsjaspreet/react-starter/compare/v0.4.0...v1.0.0) (2017-11-22)
 
