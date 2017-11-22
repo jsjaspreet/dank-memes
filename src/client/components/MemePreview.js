@@ -7,6 +7,8 @@ const descriptionStyle = {
 
 const containerStyle = {
   width: 350,
+  display: 'flex',
+  justifyContent: 'center'
 }
 
 class MemePreview extends PureComponent {
