@@ -17,7 +17,7 @@ class Home extends PureComponent {
     }
 
     return (
-      <div style={{ maxWidth: 1090 }}>
+      <div style={{ maxWidth: 1090, marginLeft: 'auto', marginRight: 'auto' }}>
         <Header
           showLeft={pageNumber > 0}
           showRight={pageNumber < (totalPages - 1)}
@@ -30,8 +30,7 @@ class Home extends PureComponent {
           monitorImagesLoaded
         >
           {
-            // db.getPage(pageNumber).map(meme => <MemePreview key={meme.imageId} {...meme} />)
-            db.getPage(0).map(meme => <MemePreview key={meme.imageId}/>)
+            db.getPage(pageNumber).map(meme => <MemePreview key={meme.imageId} {...meme} />)
           }
         </StackGrid>
       </div>

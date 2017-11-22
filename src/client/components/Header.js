@@ -2,8 +2,18 @@ import React, { PureComponent } from 'react'
 import { Link } from 'react-router-dom'
 import FontAwesome from 'react-fontawesome'
 
+const containerStyle = {
+  display: 'flex',
+  alignItems: 'center',
+  justifyContent: 'center',
+  marginTop: 12,
+  marginBottom: 12,
+}
+
 const leftArrowStyle = {
-  marginRight: 20
+  marginRight: 30,
+  width: 40,
+  color: 'black'
 }
 
 const headerStyle = {
@@ -12,7 +22,9 @@ const headerStyle = {
 }
 
 const rightArrowStyle = {
-  marginLeft: 20
+  marginLeft: 30,
+  width: 40,
+  color: 'black'
 }
 
 class Header extends PureComponent {
@@ -23,29 +35,29 @@ class Header extends PureComponent {
       currPageNumber
     } = this.props
     return (
-      <div>
+      <div style={containerStyle}>
         {
-          showLeft &&
-          <Link to={`/memes/${currPageNumber - 1}`}>
-            <FontAwesome
-              name="arrow-left"
-              size="2x"
-              style={leftArrowStyle}
-            />
-          </Link>
+          showLeft ?
+            <Link to={`/memes/${currPageNumber - 1}`}>
+              <FontAwesome
+                name="arrow-left"
+                size="4x"
+                style={leftArrowStyle}
+              />
+            </Link> : <div style={{ width: 70 }}/>
         }
         <span style={headerStyle}>
           TOP KEKKLE
         </span>
         {
-          showRight &&
-          <Link to={`/memes/${currPageNumber + 1}`}>
-            <FontAwesome
-              name="arrow-right"
-              size="2x"
-              style={rightArrowStyle}
-            />
-          </Link>
+          showRight ?
+            <Link to={`/memes/${currPageNumber + 1}`}>
+              <FontAwesome
+                name="arrow-right"
+                size="3x"
+                style={rightArrowStyle}
+              />
+            </Link> : <div style={{ width: 70 }}/>
         }
       </div>
     )
