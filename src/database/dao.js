@@ -6,7 +6,7 @@ const PAGE_SIZE = 10
 const db = {
   getPage(pageNumber) {
     const startIndex = PAGE_SIZE * pageNumber
-    const rawMemes = database.slice(startIndex, startIndex + PAGE_SIZE)
+    const rawMemes = database.reverse().slice(startIndex, startIndex + PAGE_SIZE)
 
     // Generate additional fields from raw data
     return rawMemes.map(rawMeme => {
