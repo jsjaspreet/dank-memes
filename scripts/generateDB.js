@@ -11,5 +11,5 @@ const db = srcMemes.map((memeName, index) => ({
   description: ''
 }));
 
-writeFileSync(dbLocation, JSON.stringify(db), () => console.log("Wrote out db.js"))
+writeFileSync(dbLocation, JSON.stringify(db, null, 2), () => console.log("Wrote out db.js"))
 
