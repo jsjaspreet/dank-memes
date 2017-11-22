@@ -2,6 +2,16 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+<a name="1.2.0"></a>
+# [1.2.0](https://github.com/jsjaspreet/react-starter/compare/v1.1.2...v1.2.0) (2017-11-22)
+
+
+### Features
+
+* **flush-staging:** Add process for flushing staging ([1fcb117](https://github.com/jsjaspreet/react-starter/commit/1fcb117))
+
+
+
 <a name="1.1.2"></a>
 ## [1.1.2](https://github.com/jsjaspreet/react-starter/compare/v1.1.1...v1.1.2) (2017-11-22)
 
