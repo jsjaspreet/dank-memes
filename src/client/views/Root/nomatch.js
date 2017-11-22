@@ -23,7 +23,7 @@ class NoMatch extends Component {
 
   render() {
     return (
-      <div>
+      <div style={{ display: "flex", flexDirection: "column", marginTop: 20, alignItems: "center" }}>
         <h1 style={headerStyle}>VERE JU GOING ? 404 :'(</h1>
         {
           this.state.gifURL &&
