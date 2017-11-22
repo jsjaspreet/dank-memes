@@ -14,16 +14,19 @@ const containerStyle = {
 class MemePreview extends PureComponent {
   render() {
     const {
-      thumbnailURL = 'http://lorempixel.com/350/300/abstract/',
+      thumbnailURL,
+      fullURL,
       description = ''
     } = this.props
     return (
-      <div style={containerStyle}>
-        <img src={thumbnailURL}/>
-        <span style={descriptionStyle}>
+      <a href={fullURL}>
+        <div style={containerStyle}>
+          <img src={thumbnailURL}/>
+          <span style={descriptionStyle}>
           {description}
           </span>
-      </div>
+        </div>
+      </a>
     )
 
   }
