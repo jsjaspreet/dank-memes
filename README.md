@@ -1,8 +1,9 @@
-React Starter
+DANK MEY MEYS
 =================
 [![Conventional Commits](https://img.shields.io/badge/Conventional%20Commits-1.0.0-yellow.svg)](https://conventionalcommits.org)
 
-Simple React Starter
+Simple React Starter--------- NOPE It's only memes here. JK idk I guess you can use this as a starter it's pretty dope.
+
 
 ### Adding a meme
 
