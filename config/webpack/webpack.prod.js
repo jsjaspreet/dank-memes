@@ -8,6 +8,11 @@ const projectPaths = require('../projectPaths')
 
 module.exports = merge(common, {
   devtool: '',
+  output: {
+    filename: '[name].[chunkhash].js',
+    chunkFilename: '[name].[chunkhash].js',
+    path: projectPaths.distDir
+  },
   plugins: [
     new UglifyJSPlugin({
       parallel: true,

@@ -1,4 +1,4 @@
-import React, { PureComponent } from 'react'
+import React, { Component } from 'react'
 import { Link } from 'react-router-dom'
 import FontAwesome from 'react-fontawesome'
 
@@ -27,7 +27,7 @@ const rightArrowStyle = {
   color: 'black'
 }
 
-class Header extends PureComponent {
+class Header extends Component {
   render() {
     const {
       showRight,

@@ -22,11 +22,6 @@ module.exports = {
       'react-router-dom',
     ]
   },
-  output: {
-    filename: '[name].[hash].[id].js',
-    chunkFilename: '[name].[hash].[id].js',
-    path: projectPaths.distDir
-  },
   plugins: [
     new CleanWebpackPlugin(['dist'], { root: projectPaths.rootDir }),
     new HtmlWebpackPlugin({
@@ -35,7 +30,6 @@ module.exports = {
       inject: true,
     }),
     new webpack.NamedModulesPlugin(),
-    new webpack.HotModuleReplacementPlugin(),
     new webpack.optimize.CommonsChunkPlugin({
       names: ['vendor', 'manifest']
     }),
