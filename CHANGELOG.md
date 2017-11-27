@@ -2,6 +2,17 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+<a name="1.5.0"></a>
+# [1.5.0](https://github.com/jsjaspreet/react-starter/compare/v1.4.2...v1.5.0) (2017-11-27)
+
+
+### Features
+
+* **longterm-caching:** Don't update the vendor bundle so long term caching actually works ([9044275](https://github.com/jsjaspreet/react-starter/commit/9044275))
+* **new-memes:** Add new memes ([660558b](https://github.com/jsjaspreet/react-starter/commit/660558b))
+
+
+
 <a name="1.4.2"></a>
 ## [1.4.2](https://github.com/jsjaspreet/react-starter/compare/v1.4.1...v1.4.2) (2017-11-23)
 
