@@ -12,7 +12,7 @@ class Home extends PureComponent {
     const { page } = match.params
     const pageNumber = parseInt(page)
 
-    if (isNaN(pageNumber) || pageNumber >= totalPages) {
+    if (isNaN(pageNumber) || pageNumber >= totalPages || pageNumber < 0) {
       return <Redirect to="/memes/0"/>
     }
 
