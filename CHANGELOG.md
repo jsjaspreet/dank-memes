@@ -2,6 +2,16 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+<a name="1.7.0"></a>
+# [1.7.0](https://github.com/jsjaspreet/react-starter/compare/v1.6.0...v1.7.0) (2018-04-02)
+
+
+### Features
+
+* **s3:** Move off of imgix ([72ddbed](https://github.com/jsjaspreet/react-starter/commit/72ddbed))
+
+
+
 <a name="1.6.0"></a>
 # [1.6.0](https://github.com/jsjaspreet/react-starter/compare/v1.5.0...v1.6.0) (2017-11-30)
 
